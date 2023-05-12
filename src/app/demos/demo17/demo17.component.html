@@ -1,0 +1,7 @@
+<h3>Les Storages</h3>
+
+<p>Statut de connexion : {{isConnected}}</p>
+<button (click)="login()" *ngIf="!isConnected">Se connecter</button>
+<button (click)="logout()" *ngIf="isConnected">Se déconnecter</button>
+
+<p>monUser : {{user | json}}</p>

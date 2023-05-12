@@ -50,9 +50,15 @@
                         </li>
                         <li><a class="dropdown-item" routerLink="/demos/demo16">Demo 16 - Le routing</a>
                         </li>
+                        <li><a class="dropdown-item" routerLink="/demos/demo17">Demo 17 - Les storage</a>
+                        </li>
+                        <li><a class="dropdown-item" routerLink="/demos/demo18">Demo 18 - Les Guards</a>
+                        </li>
+                        <li><a class="dropdown-item" routerLink="/demos/demo19">Demo 19 - ConsoAPI</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <li *ngIf="isConnected" class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" routerLink="exercices" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Exercices

@@ -30,6 +30,10 @@ import { Exo12Component } from './exercices/exo12/exo12.component';
 import { Exo15Component } from './exercices/exo15/exo15.component';
 import { HomeComponent } from './home/home.component';
 import { FourofourComponent } from './shared/components/fourofour/fourofour.component';
+import { Demo17Component } from './demos/demo17/demo17.component';
+import { Demo18Component } from './demos/demo18/demo18.component';
+import { isauthGuard } from './demos/demo18/isauth.guard';
+import { Demo19Component } from './demos/demo19/demo19.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -59,6 +63,10 @@ const routes: Routes = [
           { path: 'routage/:id', component: Demo16Component },
         ]
       },
+      { path: 'demo17', component: Demo17Component },
+      { path: 'demo18', canActivate : [isauthGuard], component: Demo18Component },
+      { path: 'demo19', component: Demo19Component },
+
     ]
   },
 
